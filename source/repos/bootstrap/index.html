@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Face</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    .btn-dark.glow-button {
+      --box-shadow-color: #343a40;
+    }
+
+    .btn-warning.glow-button {
+      --box-shadow-color: #ffcc00;
+    }
+    .glow-button {
+      --box-shadow-color: black;
+      box-shadow: 0 0 4px var(--box-shadow-color);
+    }
+  </style>
+  <body class="mx-5 mt-3" style="background-color: #444">
+    <nav class="navbar navbar-light bg-transparent border-bottom border-2">
+      <a class="navbar-brand mx-3 text-dark" href="#">
+        <i class="bi bi-facebook text-light h2"></i
+        ><span class="mx-2 text-light">Facebook</span>
+      </a>
+    </nav>
+    <div class="d-flex flex-wrap">
+      <div
+        class="container mt-4 p-3 text-light border-0 shadow rounded-3"
+        style="background-color: #212529"
+      >
+        <h1 class="fw-bold mx-3">Site Header</h1>
+        <p class="mx-3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+          praesentium facilis sapiente, sequi enim officiis modi harum,
+          doloremque ex esse optio blanditiis fugit suscipit. Pariatur inventore
+          ad similique accusamus. Tempore.
+        </p>
+        <button class="btn btn-warning btn-block mb-3 mx-3 shadow">
+          Example Button
+        </button>
+        <hr style="color: white; opacity: 0.5" />
+        <div
+          class="conatiner d-flex align-items-center justify-content-center flex-wrap"
+        >
+          <table
+            class="table table-striped table-dark mt-3 shadow border border-light"
+          >
+            <thead>
+              <tr>
+                <th class="text-warning" scope="col">#</th>
+                <th class="text-warning" scope="col">First</th>
+                <th class="text-warning" scope="col">Last</th>
+                <th class="text-warning" scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Veli Taha</td>
+                <td>Boyar</td>
+                <td>@velitahaboyar</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Mert Osman</td>
+                <td>Eribol</td>
+                <td>@mertosmaneribol</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Yahya</td>
+                <td>Lebit</td>
+                <td>@yahyalebit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container d-flex bg-transparent mw-200 my-5 justify-content-around flex-wrap"
+    >
+      <div
+        class="card text-center w-auto text-light d-flex align-items-center rounded-4 shadow-lg border-3 border-light"
+        style="background-color: #212529"
+      >
+        <form action="" class="mx-3 my-2 px-3">
+          <h4 class="text-light my-2">
+            <i class="bi bi-info-circle"></i> Form Dark
+          </h4>
+          <hr />
+          <div class="input-group input-group-sm">
+            <input
+              type="text"
+              placeholder="Name"
+              class="mx-2 my-2 form-control shadow border-1 hover"
+            />
+          </div>
+          <div class="input-group input-group-sm">
+            <input
+              type="text"
+              placeholder="Surname"
+              class="mx-2 my-2 form-control shadow border-2"
+            />
+          </div>
+        </form>
+        <div class="d-flex flex-wrap mb-3 form-check form-switch">
+          <input type="checkbox" class="form-check-input" />
+          <label class="form-check-label mx-1" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button
+          class="btn btn-block glow-button btn-warning w-50 mx-auto mb-4 btn-sm"
+        >
+          Submit <i class="bi bi-check2-circle"></i>
+        </button>
+      </div>
+      <div
+        class="card text-center text-dark d-flex justify-content-center align-items-center rounded-4 shadow-lg border-3 border-dark"
+      >
+        <form action="" class="mx-3 my-2 px-3">
+          <h4 class="text-dark my-2">
+            <i class="bi bi-info-circle"></i> Form Light
+          </h4>
+          <hr />
+          <div class="input-group input-group-sm">
+            <input
+              type="text"
+              placeholder="Name"
+              class="mx-2 my-2 form-control shadow"
+            />
+          </div>
+          <div class="input-group input-group-sm">
+            <input
+              type="text"
+              placeholder="Surname"
+              class="mx-2 my-2 form-control shadow"
+            />
+          </div>
+        </form>
+        <div class="d-flex flex-wrap mb-3 form-check form-switch">
+          <input type="checkbox" class="form-check-input" />
+          <label class="form-check-label mx-1" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button
+          class="btn btn-block glow-button btn-dark w-50 mb-4 btn-sm"
+          style="background-color: #000000"
+        >
+          Submit <i class="bi bi-check2-circle"></i>
+        </button>
+      </div>
+    </div>
+    <hr class="text-light" />
+    <div class="container">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBtb3VudGFpbnxlbnwwfHwwfHx8MA%3D%3D"
+              class="d-block w-100 h-50"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://wallpapercat.com/w/full/1/8/7/140275-3840x2160-desktop-4k-mountain-background-image.jpg"
+              class="d-block w-100 h-50"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.pinimg.com/736x/04/ef/5e/04ef5e1743f2123165f573616c533885.jpg"
+              class="d-block w-100 h-50"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
