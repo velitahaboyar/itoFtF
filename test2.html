@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test2.css" />
+    <script language="javascript">
+      function mySubmit() {
+        var strName = document.forms[0].strName.value;
+        window.alert("Adınız: " + strName);
+      }
+    </script>
+    <style>
+      h1 {
+        color: rgb(33, 51, 131);
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="form1" id="form1" method="post">
+      <!-- id name farkı nedir, id veya benzeri, herhangi bir attribute'u kullanmasak ne olur -->
+      <!-- overloaded fonksiyonları araştır javascript -->
+      <!-- inplicit / explicit conversion -->
+      <h1 class="headerStyle">Kayıt Ekranı</h1>
+      <table class="table-style">
+        <tr>
+          <td>Adınız</td>
+          <td>
+            <input
+              type="text"
+              name="strName"
+              id="strName"
+              maxlength="20"
+              autocomplete="off"
+              placeholder="Adınız"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Adres</td>
+          <td>
+            <textarea
+              name="strAddress"
+              id="strAddress"
+              maxlength="50"
+              placeholder="Adres"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Cinsiyet</td>
+          <td>
+            <input type="radio" name="rdGender" id="rdGender" value="1" />
+            Erkek
+            <input type="radio" name="rdGender" id="rdGender" value="2" />
+            Kadın
+          </td>
+        </tr>
+        <tr>
+          <td>Hobiler</td>
+          <td>
+            <input
+              type="checkbox"
+              id="chkHobbies"
+              name="chkHobbies"
+              value="1"
+            />
+            Spor Yapmak
+            <input
+              type="checkbox"
+              id="chkHobbies"
+              name="chkHobbies"
+              value="2"
+            />
+            Kitap Okumak
+          </td>
+        </tr>
+        <tr>
+          <td>Şehir</td>
+          <td>
+            <select name="cmbCity" id="cmbCity" style="width: 300px">
+              <option value="0">Lütfen Şehir Seçiniz</option>
+              <option value="1">Istanbul</option>
+              <option value="2">Mersin</option>
+              <option value="3">Ankara</option>
+              <option value="4">İzmir</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" onclick="javascript:mySubmit();">
+              Gönder
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

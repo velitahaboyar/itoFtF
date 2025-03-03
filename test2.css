@@ -1,0 +1,11 @@
+body {
+  background-color: #444;
+  color: #fff;
+}
+.headerStyle {
+  color: rgb(255, 174, 0);
+}
+
+.table-style {
+  border: 1px solid #fff;
+}
